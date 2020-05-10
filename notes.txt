@@ -1,3 +1,10 @@
 Use CURL to make request
 
 curl -d '{"email":"a1@test.com", "password":"12345678"}' -H "Content-Type: application/json" -X POST http://ticketing.dev/api/users/signup
+
+
+creating a secret
+
+k create secret generic jwt-secret --from-literal=JWT_KEY=private
+
+k get secrets
