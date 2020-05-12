@@ -14,7 +14,16 @@ Bypass chrome security, click anywhere on the page and Type
 "thisisunsafe"
 
 ---------------------------------------------------------
-k get namespace
+k get namespace => return all namespaces
+
+then get services of a particular namespace
+k get services -n [service name] // service name is one of the service of above command
+
+
+SERVICENAME.NAMESPACE.svc.cluster.local
+
+// in api/build-client.js
+baseURL: 'http://ingress-nginx-controller.ingress-nginx.svc.cluster.local',
 
 --------------------------------------------------------
 
