@@ -26,8 +26,18 @@ SERVICENAME.NAMESPACE.svc.cluster.local
 baseURL: 'http://ingress-nginx-controller.ingress-nginx.svc.cluster.local',
 
 --------------------------------------------------------
+update to get latest version of common
+inside auth 
+npm update @sonchau/common
+
+
+check pod has correct version of common
+k get pods // return all pods
+k exec -it auth-depl-5486d95444-jksgj sh
+
 
 ---------------------------------------------------------
+
 ---------------------------------------------------------
 ---------------------------------------------------------
 ---------------------------------------------------------
